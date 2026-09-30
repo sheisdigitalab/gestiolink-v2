@@ -860,3 +860,26 @@ body.menu-open{overflow:hidden}
   .quick__card span,.quick__card b{grid-column:2}
   .qr{display:none}
 }
+/* Versión 2: más azul oscuro del logo (#6381a8) y el rosa solo en detalles decorativos.
+   El azul oscuro se usa en cifras, titulares, iconos y formas: con texto pequeño no llega a 4,5:1. */
+.facts{background:var(--paper)}
+.facts strong{color:var(--accent)}
+.facts li+li{border-left-color:var(--line)}
+@media (max-width:640px){.facts li:nth-child(even){border-left-color:var(--line)}}
+.bg-blush{background:var(--sky)}
+.cta__box{background:var(--sky)}
+.btn--light:hover{background:var(--sky);border-color:var(--sky)}
+.tag{background:var(--sky)}
+.ico--blush{background:var(--accent);color:var(--white)}
+.welcome__list svg{background:var(--accent);color:var(--white)}
+.tile.blush{background:var(--white);border:1px solid var(--line)}
+.tile.blush > svg{color:var(--accent)}
+.value.blush{background:var(--sky)}
+.dl:nth-child(2) .dl__logo,.dl:nth-child(5) .dl__logo{background:var(--paper)}
+.dl:nth-child(3) .dl__logo{background:var(--white);border-right:1px solid var(--line)}
+.quick__card.blush{background:var(--white);border:1px solid var(--line)}
+.quick__card.blush svg{color:var(--accent)}
+.remote__panel{background:var(--sky)}
+.mnav__q:nth-child(2){background:var(--white);border:1px solid var(--line)}
+.mnav__q:nth-child(2) svg{color:var(--accent)}
+.cta__shapes i:nth-child(3){background:var(--blush)}
