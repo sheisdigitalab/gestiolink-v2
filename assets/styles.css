@@ -830,3 +830,33 @@ body.menu-open{overflow:hidden}
 .dl__steps{margin:.25rem 0 1.25rem;padding-left:1.2rem;display:grid;gap:.4rem;color:var(--muted);font-size:var(--fs-6)}
 .dl__steps a{color:var(--ink);font-weight:500}
 @media (max-width:640px){.scard__media img{aspect-ratio:2/1}}
+/* Versión 2: servicios de la portada más compactos en móvil */
+@media (max-width:600px){
+  .bento{gap:.75rem}
+  .tile--photo,.tile--photo.sm{min-height:230px;padding:1.25rem}
+  .tile--color{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:1rem;row-gap:.2rem;align-items:start;padding:1.1rem 3.75rem 1.1rem 1.1rem}
+  .tile--color > svg:not(.tile__go svg){grid-row:span 2;margin:2px 0 0}
+  .tile--color h3{margin:0;font-size:var(--fs-4)}
+  .tile--color p{grid-column:2}
+  .tile .tile__go{top:50%;right:1rem;width:36px;height:36px;margin-top:-18px}
+  .tile--photo .tile__go{top:1rem;margin-top:0}
+}
+/* Versión 2: descargas más compactas en móvil */
+@media (max-width:620px){
+  .dl-grid{gap:.75rem}
+  .dl--featured .dl__logo{height:110px;min-height:0}
+  .dl--featured .dl__logo .tv{max-height:64px}
+  .dl:not(.dl--featured){flex-direction:row;align-items:stretch}
+  .dl:not(.dl--featured) .dl__logo{width:96px;height:auto;flex:none;padding:.75rem}
+  .dl:not(.dl--featured) .dl__logo img{max-width:100%;max-height:40px}
+  .dl:not(.dl--featured) .dl__body{padding:1rem;gap:.3rem}
+  .dl:not(.dl--featured) .dl__body .btn{margin-top:.4rem;min-height:40px}
+}
+/* Versión 2: contacto en móvil */
+@media (max-width:760px){
+  .quick{gap:.6rem;margin-top:1.75rem}
+  .quick__card{grid-template-columns:auto minmax(0,1fr);column-gap:.9rem;row-gap:0;align-items:center;padding:.9rem 1.1rem}
+  .quick__card svg{grid-row:span 2;margin:0}
+  .quick__card span,.quick__card b{grid-column:2}
+  .qr{display:none}
+}
