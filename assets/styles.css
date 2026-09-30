@@ -812,3 +812,21 @@ body.menu-open{overflow:hidden}
   .process__step:not(:last-child)::after{content:"";position:absolute;left:19.5px;top:2.75rem;bottom:.5rem;width:1px;background:var(--control)}
   .process__step h3{font-size:var(--fs-4)}
 }
+
+/* Versión 2: servicios en cuadrícula */
+.sgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.scard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;scroll-margin-top:90px}
+.scard__media{position:relative}
+.scard__media img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.scard__media .badge{position:absolute;top:.85rem;left:.85rem;background:var(--white);border-radius:999px;padding:.35rem .75rem;font-size:var(--fs-6);font-weight:500;color:var(--ink)}
+.scard__body{padding:1.4rem 1.4rem 1.6rem;display:grid;gap:.6rem;align-content:start}
+.scard h2{font-size:var(--fs-3);line-height:1.2;margin:0}
+.scard p{color:var(--muted);font-size:var(--fs-6)}
+.scard .ticks{list-style:none;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.45rem 1rem}
+.scard .ticks li{display:flex;gap:.5rem;align-items:flex-start;font-size:var(--fs-6);color:var(--text)}
+.scard .ticks svg{width:16px;height:16px;color:var(--accent);flex:none;margin-top:3px}
+@media (max-width:1024px){.sgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.sgrid{grid-template-columns:minmax(0,1fr)}}
+.dl__steps{margin:.25rem 0 1.25rem;padding-left:1.2rem;display:grid;gap:.4rem;color:var(--muted);font-size:var(--fs-6)}
+.dl__steps a{color:var(--ink);font-weight:500}
+@media (max-width:640px){.scard__media img{aspect-ratio:2/1}}
